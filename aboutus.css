@@ -1,0 +1,82 @@
+/* Base Styles */
+.nav-section {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+  
+  /* Animation Classes */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  
+  .fade-in {
+    opacity: 0;
+  }
+  
+  .slide-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  
+  .slide-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  
+  /* Button Animations */
+  .learn-more-btn {
+    transition: transform 0.3s ease;
+  }
+  
+  .learn-more-btn:hover {
+    transform: translateX(5px);
+  }
+  
+  /* Navigation Hover Effects */
+  .nav-item {
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #22c55e;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-item:hover::after {
+    width: 100%;
+  }
+  
+  /* Logo Animation */
+  .logo-icon {
+    transition: transform 0.3s ease;
+  }
+  
+  #symbol:hover .logo-icon {
+    transform: rotate(360deg);
+  }
+  
+  /* Section Spacing */
+  .hero-section {
+    margin-top: 80px;
+  }
+  
+  /* Image Hover Effects */
+  .hero-image img {
+    transition: transform 0.5s ease;
+  }
+  
+  .hero-image:hover img {
+    transform: scale(1.05);
+  }
+  

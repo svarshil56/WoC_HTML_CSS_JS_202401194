@@ -1,26 +1,28 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-  <header class="text-gray-600 body-font bg-green-100">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+  </head>
+<body class="font-[Poppins]">
+  <header class="text-gray-600 body-font bg-green-100 nav-section">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-      <a class="flex title-font font-medium items-center text-green-600 mb-4 md:mb-0">
+      <a id= "symbol" class="flex title-font font-medium items-center text-green-600 mb-4 md:mb-0">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full" viewBox="0 0 24 24">
           <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
         </svg>
         <span class="ml-3 text-xl">Shah Stars</span>
       </a>
-      <nav  class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-        <a href="home.html" class="mr-5 hover:text-gray-900">Home</a>
-        <a href="aboutus.html" class="mr-5 hover:text-gray-900">About Us</a>
-        <a href="courses.html" class="mr-5 hover:text-gray-900">Courses</a>
-        <a href="reviews.html" class="mr-5 hover:text-gray-900">Reviews</a>
-        <a href="contactus.html" class="mr-5 hover:text-gray-900">Contact Us</a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a href="home.html" class="nav-item mr-5 hover:text-gray-900">Home</a>
+        <a href="aboutus.html" class="nav-item mr-5 hover:text-gray-900">About Us</a>
+        <a href="courses.html" class="nav-item mr-5 hover:text-gray-900">Courses</a>
+        <a href="reviews.html" class="nav-item mr-5 hover:text-gray-900">Reviews</a>
+        <a href="contactus.html" class="nav-item mr-5 hover:text-gray-900">Contact Us</a>
       </nav>
       <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Logout
         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
@@ -171,6 +173,7 @@
           </div>
         </div>
       </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
       <script src="script.js"></script>
 </body>
